@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>	
+	<!-- Primary Meta Tags -->
+	<title>Delivery - Cartão Digital</title>
+	<meta name="title" content="Delivery - Cartão Digital"/>
+	<meta name="description" content="Cartão virtual interativo com ícones clicáveis para o compratilhamento, contato instantâneo através de ligações, mensagens de texto, e-mails, acesso a sites e redes sociais."/>
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://dcards.github.io/delivery-01/"/>
+	<meta property="og:title" content="Delivery - Cartão Digital"/>
+	<meta property="og:description" content="Cartão virtual interativo com ícones clicáveis para o compratilhamento, contato instantâneo através de ligações, mensagens de texto, e-mails, acesso a sites e redes sociais."/>
+	<meta property="og:image" content="https://dcards.github.io/delivery-01/imgs/mauricio-jun-cartao-digital-puro-1024x1024-v01-01.png"/>
+	
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://dcards.github.io/delivery-01/"/>
+	<meta property="twitter:title" content="Delivery - Cartão Digital"/>
+	<meta property="twitter:description" content="Cartão virtual interativo com ícones clicáveis para o compratilhamento, contato instantâneo através de ligações, mensagens de texto, e-mails, acesso a sites e redes sociais."/>
+	<meta property="twitter:image" content="https://dcards.github.io/delivery-01/imgs/mauricio-jun-cartao-digital-puro-1024x1024-v01-01.png"/>
+	
+	<meta name="keywords" content="Mauricio Jun, Tecnologia da Informação, Cartão virtual, Cartão Digital, Presença online, Sites, Redes Sociais, Empreendedorismo Digital, Projetos Digitais, soluções gratuitas"/>
+	<meta name="robots" content="index, follow"/>
+	
+	<link rel="icon" href="https://dcards.github.io/delivery-01/favicon/android-chrome-512x512.png" type="image/png" sizes="16x16"/>
+	
+	<script>
+		/*
+		if (navigator.onLine === true) {
+			location.replace("/delivery-01/");
+		}
+		*/
+	</script>
+	
+	<style>
+		html, body { margin: 0; padding: 0; height: 100%; /*background-color: #000;*/ }
+		html {
+			/*
+			background-image: url("imgs/dcard-cartao-digital-background-line-v01-01.png");
+			*/
+			background-color: #a61414;
+			/*
+			background-position: top center;
+			background-repeat: repeat-x;
+			background-attachment: fixed;
+			background-size: cover;
+			background-size: 100%;
+			*/
+		}
+		body {
+			font-family: Arial;
+			font-size: 16px;
+		}
+		#main {
+			min-height: 100%;
+			position: relative;
+			/*
+			background-image: url("imgs/logo-bkg-03-mobile-transparente.png");
+			background-position: bottom center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			*/
+		}
+		#mainheader {
+			min-height: 195px;
+		}
+		#header {
+			padding: 6.0% 20px 0px 20px;
+			background-image: linear-gradient(#fff 50%,#fedba7);
+		}
+		#content {
+			/*
+			padding-top: 8px;
+			padding-right: 8px;
+			padding-bottom: 8px;
+			padding-left: 8px;
+			*/
+			/*
+			background-image: url("imgs/logo-bkg-03-mobile-transparente.png");
+			background-position: bottom left;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			*/
+			/*background-size: contain*/
+			/*background-size: 100%;*/
+			/*background-clip: border-box;*/
+			/*min-height: 195px;*/
+			/*background-image: linear-gradient(#fedba7,#f28907,#a61414);*/
+			background-image: url("imgs/dcard-cartao-digital-background-line-v01-01.png");
+			background-repeat: repeat-x;
+		}
+		#contentarea {
+			padding: 0px 20px;
+		}
+		#footer {
+			min-height: 50px;
+			background: initial;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			color: #590505;
+			border-top: 1px solid #590505;
+		}
+		#footer a {
+			color: #D9601A;
+			text-decoration: none;
+		}
+		
+		/* Style the tab */
+		#maintabs {
+			/*border: 1px solid #f2d335;*/
+		}
+		.tab {
+			overflow: hidden;
+			/*
+			border-top: 1px solid #f2d335;
+			border-right: 1px solid #f2d335;
+			border-left: 1px solid #f2d335;
+			*/
+			/*background-color: #f2d335;*/
+		}
+		
+		/* Style the buttons inside the tab */
+		.tab button {
+			/*background-color: inherit;*/
+			float: left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 11px 11px;
+			transition: 0.3s;
+			font-size: 0.8em;
+			/*color: #630f12;*/
+			color: #235915;
+			width: 33.33%;
+			background-color: initial;
+			border-radius: 0px;
+			/*border-right: 1px solid #123b40;*/
+			/*border-left: 1px solid #123b40;*/
+			outline: none !important;
+			outline-style: none;
+			border-top: 0px;
+			border-right: 1px solid  rgba(0,0,0,0);
+			border-bottom: 0px;
+			border-left: 1px solid  rgba(255,255,0,0);
+			box-shadow: 0px 2px inset #428c20;
+		}
+		.tab button:first-child {
+			border-left: none;
+		}
+		.tab button:last-child {
+			border-right: none;
+		}
+		
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+			background-color: initial;
+			box-shadow: 0px 2px inset #0f6e01;
+			color: #0f6e01;
+		}
+		
+		/* Create an active/current tablink class */
+		.tab button.active {
+			/*background-color: #123b40;*/
+			background-color: initial;
+			color: #590505;
+			box-shadow: 0px 2px inset #590505;
+		}
+		
+		/* Style the tab content */
+		.tabcontent {
+			display: none;
+			padding: 10px 10px;
+			/*border: 1px solid #3a8c8c;*/
+			border-top: none;
+		}
+		#ABA-03 {
+			color: #F2F2F2;
+			font-size: 1em;
+		}
+		#ABA-02 {
+			color: #F2F2F2;
+			font-size: 1em;
+		}
+		.pdefault {
+			color: #F2F2F2;
+			font-size: 1em;
+		}
+		
+		.imageResponsive {
+			width: 100%;
+			height: auto;
+			min-width: 250px;
+			min-height: 70px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+		.titleHeader, .titleHeader a {
+			display: inline-block;
+			width: auto;
+			text-align: right;
+			border: none;
+		}
+		h1.titleHeader {
+			text-align: center;
+			display: block;
+			font-size: 2em;
+			margin-block-start: 0px;
+			margin-block-end: 0px;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-weight: bold;
+			line-height: 0.7em; /*to avoid padding-bottom*/
+			/*
+			border: 1px solid #f2d335;
+			padding-top: 3px;
+			padding-bottom: 3px;
+			padding-left: 25px;
+			padding-right: 25px;
+			background: rgba(255, 255, 255, 0.85);
+			*/
+			/*background-color: #fff;*/
+		}
+		.titleHeader a {
+			display: inline-block;
+			width: 90%;
+			min-width: 70px;
+			text-align: center;
+		}
+		.subtitle {
+			display: block;
+			font-size: 0.67em;
+			margin-block-start: 0em;
+			margin-block-end: 0em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-weight: bold;
+			padding-top: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 1.25em;
+			/*border-top: 1px solid #3a8c8c;*/
+			/* border-left: 3px solid #575a5a; */
+			color: #590505;
+			text-align: center;
+		}
+		.subtitle span {
+			font-weight: normal !important;
+		}
+		
+		.contentsubtitle {
+			display: block;
+			font-size: 1em;
+			margin-block-start: 0em;
+			margin-block-end: 0em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-weight: bold;
+			padding-top: 0.4em;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 10px;
+			/* border-top: 1px solid #3a8c8c;
+			border-left: 3px solid #575a5a; */
+			color: #F2F2F2;
+			text-align: center;
+		}
+		
+		/*  SECTIONS  */
+		.section {
+			clear: both;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		/*  COLUMN SETUP  */
+		.col {
+			display: block;
+			float:left;
+			margin: 1% 0 1% 1.6%;
+			text-align: center;
+		}
+		.col:first-child { margin-left: 0; }
+
+		/*  GROUPING  */
+		.group:before,
+		.group:after { content:""; display:table; }
+		.group:after { clear:both;}
+		.group { zoom:1; /* For IE 6/7 */ }
+		
+		/*  GRID OF THREE  */
+		.span_3_of_3 { width: 100%; }
+		.span_2_of_3 { width: 66.13%; }
+		.span_1_of_3 { width: 32.26%; }
+
+		/*  GO FULL WIDTH BELOW 480 PIXELS */
+		@media only screen and (max-width: 480px) {
+			.col {  margin: 1% 0 1% 1.6%; }
+			/*.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }*/
+			.span_3_of_3 { width: 100%; }
+			.span_2_of_3 { width: 66.13%; }
+			.span_1_of_3 { width: 32.26%; }
+		}
+		
+		.dot {
+			display: inline-block;
+			border-radius: 50%;
+			height: 36px;
+			width: 36px;
+			text-align: center;
+			line-height: 36px;
+			vertical-align: middle;
+			padding: 6px;
+			background-color: #02590f;
+			border: 2px solid #f2b705;
+		}
+		.dotverticaltop {
+			vertical-align: top;
+		}
+		.dot i {
+			/*font-size: 36px;*/
+			font-size: 28px;
+			line-height: 38px;
+			color: #f2b705;
+			border: none;
+			text-decoration: none;
+		}
+		.fahighlight {
+			color: #f2b705 !important;
+		}
+		.dothighlight {
+			background-color: #02590f;
+		}
+		.iconslinkstexts {
+			display: block;
+			color: #f2cd5c;
+			border: none;
+			margin-top: 5px;
+			margin-bottom: 15px;
+			text-decoration: none;
+			font-size: 0.8em;
+		}
+		.iconslinkstextsfloat {
+			display: inline-block;
+			color: #f2d335;
+			border: none;
+			margin-left: 5px;
+			text-decoration: none;
+			font-size: 0.8em;
+			min-height: 42px;
+			line-height: 1.6;
+			vertical-align: middle;
+			text-align: left;
+		}
+		.iconslinkstextshighlight {
+			color: #f2cd5c;
+		}
+		.iconslinkstexts strong, .iconslinkstextsfloat strong {
+			font-weight: normal;
+		}
+		.clearall {
+			clear: both;
+		}
+		span.clearall {
+			display: block;
+			height: 0px;
+			line-height: 0px;
+			overflow: hidden;
+			clear: both;
+		}
+		.aligncenter {
+			text-align: center;
+		}
+		.f80size {
+			font-size: 0.8em;
+		}
+		.topmargin0 {
+			margin-top: 0px;
+		}
+		.floatleft {
+			float: left;
+		}
+		.floatright {
+			float: right;
+		}
+		.textalignright {
+			text-align: right;
+		}
+		
+		.socialarea {
+			display: block;
+			margin-block-start: 0em;
+			margin-block-end: 0em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			text-align: center;
+			/*background: rgba(209,209,188,0.3);*/
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border-top: 1px solid #e4b16a;
+		}
+		.socialarea .dot {
+			margin: 10px 5px;
+			/*background-color: #8abfb0;*/
+			border: 2px solid #e4b16a;
+			background-color: initial;
+			height: 30px;
+			width: 30px;
+			line-height: 30px;
+		}
+		.socialarea .dot i {
+			color: #e4b16a;
+			font-size: 24px;
+			line-height: 30px;
+		}
+		footer {
+			text-align: center;
+			padding: 3px;
+			font-size: 0.8em;
+		}
+		.avatar {
+			float: left;
+		}
+		.avatar-left {
+			float: left;
+		}
+		.avatar-right {
+			float: right;
+		}
+		.avatar-85 {
+			border: 3px solid #F2F2F2 !important;
+			border-radius: 85px;
+			margin-right: 10px;
+			margin-bottom: 5px;
+		}
+		.avatar-square-left {
+			border: 3px solid #F2F2F2 !important;
+			border-radius: 10px;
+			margin-right: 10px;
+			margin-bottom: 5px;
+		}
+		.avatar-square-right {
+			border: 3px solid #F2F2F2 !important;
+			border-radius: 10px;
+			margin-left: 10px;
+			margin-bottom: 5px;
+		}
+		.portfolioarea {
+			padding-bottom: 1em;
+			border-bottom: 1px solid #BFB8B4;
+		}
+		
+		.photo {
+			max-width: 100%;
+			min-width: 91px;
+			min-height: 91px;
+			vertical-align: middle;
+			border: 0;
+			width: 20%;
+			height: 20%;
+		}
+		.verticalaligntop {
+			vertical-align: top;
+		}
+		.lineheight1-6 {
+			line-height: 1.6;
+		}
+		
+		.button {
+			border: none;
+			color: white;
+			padding: 15px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		.button2 {
+			background-color: #3a8c8c;
+			border-radius: 4px; 
+		}
+		.button2:hover {
+			background-color: #123b40;
+			color: white;
+		}
+		.button3 {
+			background-color: #f2d335;
+			border-radius: 4px;
+			text-transform: uppercase;
+			color: #733924;
+		}
+		.button3:hover {
+			background-color: #f2a03d;
+			color: white;
+		}
+		.buttoncenter { margin: 0px auto; }
+		
+		.dotcircle {
+			display: inline-block;
+			border-radius: 50%;
+			height: 22px;
+			width: 22px;
+			text-align: center;
+			line-height: 22px;
+			vertical-align: middle;
+			padding: 3px;
+			/*background-color: #3a8c8c;*/
+			background-color: #000;
+			border: 3px solid #ffba00;
+		}
+		.dotcircle i {
+			font-size: 16px;
+			line-height: 20px;
+			color: #fff;
+			border: none;
+			text-decoration: none;
+		}
+		.warningalertcolor {
+			color: #ffba00 !important;
+		}
+		.alertred {
+			color: #a61414;
+		}
+		.padding-bottom-1em {
+			padding-bottom: 1em;
+		}
+		.display-block {
+			display: block;
+		}
+		.fontsize08em {
+			font-size: 0.8em;
+		}
+		.fontsize067em {
+			font-size: 0.67em;
+		}
+		.colorfff {
+			color: #fff;
+		}
+		.colorbfbfbf {
+			color: #590505;
+		}
+		.uppercasetext {
+			text-transform: uppercase;
+		}
+		.colorF3CBE8 {
+			/*color: #F3CBE8;*/
+			color: yellow;
+		}
+		.fontsize13em {
+			font-size: 1.3em;
+		}
+		.displayinlineblock {
+			display: inline-block;
+		}
+		.float-right {
+			float: right;
+		}
+		.float-left {
+			float: left;
+		}
+	</style>
+	<style>
+		/* The Modal (background) */
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			/*z-index: 1;*/ /* Sit on top */
+			z-index: 19999;
+			left: 0;
+			top: initial !important;
+			bottom: 0 !important;
+			width: 100%; /* Full width */
+			/*height: 100%;*/ /* Full height */
+			height: auto !important;
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			-webkit-animation-name: fadeIn; /* Fade in the background */
+			-webkit-animation-duration: 0.4s;
+			animation-name: fadeIn;
+			animation-duration: 0.4s;
+		}
+		/* Modal Content */
+		.modal-content {
+			position: fixed;
+			bottom: 0;
+			background-color: #fefefe;
+			width: 100%;
+			-webkit-animation-name: slideIn;
+			-webkit-animation-duration: 0.4s;
+			animation-name: slideIn;
+			animation-duration: 0.4s;
+			background: rgba(38, 38, 38, 0.90);
+		}
+		/* The Close Button */
+		.close {
+			color: #bfbfbf;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+		.close:hover,
+		.close:focus {
+			color: #b5b5b5;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		.modal-header {
+			padding: 2px 16px;
+			/*background-color: #5cb85c;*/
+			background-color: #fff;
+			color: white;
+			background-color: initial;
+			border-bottom: 1px solid #737373;
+		}
+		.modal-header h2 {
+			font-size: 15px;
+			line-height: 28px;
+			color: #bfbfbf;
+			font-weight: normal;
+			margin: 0;
+		}
+		/*.modal-body {padding: 2px 16px;}*/
+		.modal-body {padding: 11px 16px 6px 16px;}
+		.modal-footer {
+			display: none;
+			/*
+			padding: 2px 16px;
+			background-color: #5cb85c;
+			color: white;
+			*/
+		}
+		/* Add Animation */
+		@-webkit-keyframes slideIn {
+			from {bottom: -300px; opacity: 0} 
+			to {bottom: 0; opacity: 1}
+		}
+		@keyframes slideIn {
+			from {bottom: -300px; opacity: 0}
+			to {bottom: 0; opacity: 1}
+		}
+		@-webkit-keyframes fadeIn {
+			from {opacity: 0} 
+			to {opacity: 1}
+		}
+		@keyframes fadeIn {
+			from {opacity: 0} 
+			to {opacity: 1}
+		}
+		
+		.fullscreenline { display: block; align: center; margin: 0px auto; text-align: center; }
+		.fullscreenline button {
+			transition: all .3s;
+			background: initial;
+			padding: 10px 10px !important;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 0 5px 0;
+			/*font-size: 15px;*/
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #F28A2E;
+			font-weight: normal;
+			white-space: nowrap;
+			/*font-family: Ruda;*/
+			font-family: 'Lato', sans-serif;
+			text-decoration: none;
+			/*line-height: 32px;*/
+			letter-spacing: 1.5px;
+			cursor: pointer;
+			border: none !important;
+			box-shadow: 2px 0px inset #D9601A, 0px 2px inset #D9601A, -2px 0px inset #F28A2E, 0px -2px inset #F28A2E;
+		}
+		button.firstbutt { margin-right: 10px !important; }
+		#fullscreenbuttons {
+			margin-top: 10px;
+			margin-bottom: 20px;
+			font-size: 0.8em !important;
+		}
+		#fullscreenbuttons button {
+			font-size: 0.8em !important;
+		}
+		.add-to {
+			/*
+			background-color: #E02D44; 
+			width: 30%;
+			*/
+		} 
+		.add-to-btn {
+			/*
+			background-color: #E02D44; 
+			color: white; 
+			border: none; 
+			outline:none; 
+			font-weight: bold; 
+			width: 100%; 
+			height: 50px;
+			*/
+			color: #F2C029 !important;
+			font-size: 0.67em !important;
+			box-shadow: 2px 0px inset #F2C029, 0px 2px inset #F2C029, -2px 0px inset #BF8D30, 0px -2px inset #BF8D30 !important;
+			border-radius: 4px;
+		}
+	</style>
+	<style>
+		#slidearea {
+			box-sizing: border-box;
+			position: relative;
+			margin-bottom: -6.0%;
+			overflow: hidden;
+			background-color: #a61414;
+		}
+		.mySlides {display: none;}
+		#slidearea img {vertical-align: middle;}
+		
+		/* Slideshow container */
+		.slideshow-container {
+			/*max-width: 1000px;*/
+			position: relative;
+			margin: auto;
+			margin-bottom: -6.0%;
+			overflow: hidden;
+		}
+		
+		/* Caption text */
+		#slidearea .text {
+			color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 25.0%;
+			width: 100%;
+			text-align: center;
+		}
+		
+		/* Number text (1/3 etc) */
+		#slidearea .numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%)
+		}
+		
+		/* The dots/bullets/indicators */
+		#slidearea .slide-dots-area {
+			position: absolute;
+			bottom: 14.0%;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%)
+		}
+		#slidearea .slide-bottom-label {
+			position: absolute;
+			bottom: 0px;
+		}
+		.slide-dot {
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+		
+		#slidearea .active {
+			background-color: #717171;
+		}
+		
+		/* Fading animation */
+		#slidearea .fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+		
+		@-webkit-keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+		}
+		
+		@keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+		}
+		
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+			#slidearea .text {font-size: 11px}
+		}
+	</style>
+	
+	<link rel="stylesheet" href="https://dcards.github.io/delivery-01/css/all.css"/>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171314245-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-171314245-2');
+	</script>
+	
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TK9HTB2');</script>
+	<!-- End Google Tag Manager -->
+	
+</head>
+<body>
+	
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK9HTB2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+	<div id="main">
+		
+		<div id="mainheader">
+			<div id="slidearea">
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<div class="numbertext"><!-- 1 / 3 --></div>
+						<img src="imgs/mauricio-jun-dcard-dia-dos-pais-01.jpg" style="width:100%" />
+						<div class="text"><!-- Caption Text --></div>
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext"><!-- 2 / 3 --></div>
+						<img src="imgs/mauricio-jun-dcard-dia-dos-pais-02.jpg" style="width:100%" />
+						<div class="text"><!-- Caption Two --></div>
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext"><!-- 3 / 3 --></div>
+						<img src="imgs/mauricio-jun-dcard-dia-dos-pais-03.jpg" style="width:100%" />
+						<div class="text"><!-- Caption Three --></div>
+					</div>
+					<div class="slide-dots-area" style="text-align:center">
+						<span class="slide-dot"></span> 
+						<span class="slide-dot"></span> 
+						<span class="slide-dot"></span> 
+					</div>
+				</div>
+				<div class="slide-bottom-label">
+					<img src="imgs/dcard-cartao-digital-molde-cabecalho-v01-01.png" style="width:100%" />
+				</div>
+			</div>
+			<div id="header">
+				<h1 class="titleHeader">
+					<a href="https://dcards.github.io/delivery-01/?utm_source=pwa">
+						<img alt="Delivery 01 - Card" id="imageHeader" src="imgs/logo-mauricio-jun-cartao-digital-horiz-v01-01.png" class="imageResponsive" width="706" height="504" title="Delivery 01 - Card"/>
+					</a>
+				</h1>
+			</div>
+		</div>
+		
+		<div id="content">
+			
+			<h2 class="subtitle">CARTÃO DIGITAL<span>  .  INTERAJA TOCANDO NOS ÍCONES</span></h2>
+			
+			<div id="contentarea">
+				
+				<p class="topmargin0 f80size alertred aligncenter">Para utilizar todos os recursos, você precisa estar conectado à internet.</p>
+				
+				<div id="maintabs">
+					<div class="tab">
+						<button class="tablinks" onclick="openTab(event, 'ABA-01', 'CONTATOS')" id="defaultOpen">CONTATOS</button>
+						<button class="tablinks" onclick="openTab(event, 'ABA-02', 'CARDÁPIO')">CARDÁPIO</button>
+						<button class="tablinks" onclick="openTab(event, 'ABA-03', 'SOBRE')">SOBRE</button>
+					</div>
+					<div id="ABA-01" class="tabcontent">
+						<!-- <p class="aligncenter f80size topmargin0">Clique nos ícones para interagir.</p> -->
+						<div class="section group">
+							<div class="col span_1_of_3">
+								<a href="tel:+5521983251504" target="_blank" class="dot" title="Ligar"><i class="fas fa-mobile-alt"></i></a><div class="clearall"></div>
+								<a href="tel:+5521983251504" target="_blank" class="iconslinkstexts" title="Ligar"><strong>Ligar</strong></a>
+							</div>
+							<div class="col span_1_of_3">
+								<a href="https://wa.me/5521983251504" target="_blank" class="dot" title="WhatsApp"><i class="fab fa-whatsapp"></i></a><div class="clearall"></div>
+								<a href="https://wa.me/5521983251504" target="_blank" class="iconslinkstexts" title="WhatsApp"><strong>WhatsApp</strong></a>
+							</div>
+							<div class="col span_1_of_3">
+								<a href="sms:+5521983251504" target="_blank" class="dot" title="SMS"><i class="fas fa-sms"></i></a><div class="clearall"></div>
+								<a href="sms:+5521983251504" target="_blank" class="iconslinkstexts" title="SMS"><strong>SMS</strong></a>
+							</div>
+						</div>
+						<div class="section group">
+							<div class="col span_1_of_3">
+								<a href="https://m.me/mauricio.jun.ti" target="_blank" class="dot" title="Messenger"><i class="fab fa-facebook-messenger"></i></a><div class="clearall"></div>
+								<a href="https://m.me/mauricio.jun.ti" target="_blank" class="iconslinkstexts" title="Messenger"><strong>Messenger</strong></a>
+							</div>
+							<div class="col span_1_of_3">
+								<a href="mailto:mauriciojun.ti@gmail.com" target="_blank" class="dot" title="E-mail"><i class="fa fa-envelope"></i></a><div class="clearall"></div>
+								<a href="mailto:mauriciojun.ti@gmail.com" target="_blank" class="iconslinkstexts" title="E-mail"><strong>E-mail</strong></a>
+							</div>
+							<div class="col span_1_of_3">
+								<a href="https://drive.google.com/uc?id=1-LZ2FWYIsN87fppwRqrwD7O_B6KsMAC6&export=download" target="_blank" class="dot dothighlight" title="Baixar contato"><i class="far fa-address-card fahighlight"></i></a><div class="clearall"></div>
+								<a href="https://drive.google.com/uc?id=1-LZ2FWYIsN87fppwRqrwD7O_B6KsMAC6&export=download" target="_blank" class="iconslinkstexts iconslinkstextshighlight" title="Baixar contato"><strong>Baixar contato</strong></a>
+							</div>
+						</div>
+					</div>
+					<div id="ABA-02" class="tabcontent">
+						<!-- 
+						<p class="aligncenter topmargin0">
+							<a href="https://goo.gl/maps/voyg1ksimXrmhGd36" target="_blank" class="dot dothighlight dotverticaltop" title="Google Maps"><i class="fas fa-map-marker-alt fahighlight"></i></a>
+							<a href="https://goo.gl/maps/voyg1ksimXrmhGd36" target="_blank" class="iconslinkstextsfloat iconslinkstextshighlight" title="Google Maps"><strong>R. Maestro José Botelho, 171<br/>Santa Rosa - Niterói - RJ</strong></a>
+						</p>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.820604951412!2d-43.1012925!3d-22.9058028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x998408ab897e3b%3A0x9dc61223646a474b!2sR.%20Maestro%20Jos%C3%A9%20Botelho%2C%20171%20-%20Santa%20Rosa%2C%20Niter%C3%B3i%20-%20RJ%2C%2024230-410!5e0!3m2!1spt-PT!2sbr!4v1593011543205!5m2!1spt-PT!2sbr" width="100%" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"></iframe>
+						-->
+						<p class="topmargin0 portfolioarea">
+							<img alt="Delivery 01 - Portfólio 01" src="imgs/portfolio-01.png" class="avatar-left avatar-square-left photo verticalaligntop" height="85" width="85" title="Delivery 01 - Portfólio 01"/>
+							<span class="verticalaligntop lineheight1-6"><strong class="uppercasetext">Por que ter um cartão digital?</strong><!-- <br/><i>30/06/2020</i> --><br/><strong class="colorF3CBE8 fontsize13em">✩ R$ 350,00 ✩</strong><br/><i class="fontsize08em colorF3CBE8">PROMOÇÃO! Válida até 31/08/2020</i><br/>Pela facilidade no compartilhamento, acesso rápido e interativo às informações e contatos.</span>
+							<span class="clearall"></span>
+							<label class="aligncenter topmargin0 display-block">
+								<a href="https://wa.me/5521983251504?text=Do%20Cart%C3%A3o%20Digital%20-%20Delivery%2001%20-%20Solicita%C3%A7%C3%A3o%20de%20Pedido%3A%20Por%20que%20ter%20um%20cart%C3%A3o%20digital%20-%20PROMO%C3%87%C3%83O%20R%24%20350%2C00" target="_blank" class="dot" title="WhatsApp - Pedido 01"><i class="fab fa-whatsapp"></i></a>
+								<a href="https://wa.me/5521983251504?text=Do%20Cart%C3%A3o%20Digital%20-%20Delivery%2001%20-%20Solicita%C3%A7%C3%A3o%20de%20Pedido%3A%20Por%20que%20ter%20um%20cart%C3%A3o%20digital%20-%20PROMO%C3%87%C3%83O%20R%24%20350%2C00" target="_blank" class="iconslinkstextsfloat" title="WhatsApp - Pedido 01"><strong class="uppercasetext">Faça seu<br/>pedido!</strong></a>
+								<span class="clearall"></span>
+							</label>
+							<span class="clearall"></span>
+						</p>
+						<p class="topmargin0 clearall portfolioarea textalignright">
+							<img alt="Delivery 01 - Portfólio 02" src="imgs/portfolio-02.png" class="avatar-right avatar-square-right photo verticalaligntop" height="85" width="85" title="Delivery 01 - Portfólio 02"/>
+							<span class="verticalaligntop lineheight1-6"><strong class="uppercasetext">Vantagens de um cartão digital?</strong><br/><i class="fontsize08em">30/06/2020</i><br/>As pessoas para quem você compartilhou, se tornam potenciais divulgadoras e compartilhadoras.</span>
+							<span class="clearall"></span>
+							<label class="aligncenter topmargin0 display-block">
+								<a href="https://wa.me/5521983251504?text=Do%20Cart%C3%A3o%20Digital%20-%20Delivery%2001%20-%20Solicita%C3%A7%C3%A3o%20de%20Pedido%3A%20Vantagens%20de%20um%20cart%C3%A3o%20digital" target="_blank" class="dot" title="WhatsApp - Pedido 02"><i class="fab fa-whatsapp"></i></a>
+								<a href="https://wa.me/5521983251504?text=Do%20Cart%C3%A3o%20Digital%20-%20Delivery%2001%20-%20Solicita%C3%A7%C3%A3o%20de%20Pedido%3A%20Vantagens%20de%20um%20cart%C3%A3o%20digital" target="_blank" class="iconslinkstextsfloat" title="WhatsApp - Pedido 02"><strong class="uppercasetext">Faça seu<br/>pedido!</strong></a>
+								<span class="clearall"></span>
+							</label>
+							<span class="clearall"></span>
+						</p>
+						<p class="topmargin0 clearall portfolioarea">
+							<img alt="Delivery 01 - Portfólio 03" src="imgs/portfolio-03.png" class="avatar-left avatar-square-left photo verticalaligntop" height="85" width="85" title="Delivery 01 - Portfólio 03"/>
+							<span class="verticalaligntop lineheight1-6"><strong class="uppercasetext">Tem mais?</strong><br/><i class="fontsize08em">30/06/2020</i><br/>Podem ser adicionados como ícones e executados das telas dos celulares, aparecer como resultado no Google etc.</span>
+							<span class="clearall"></span>
+							<label class="aligncenter topmargin0 display-block">
+								<a href="https://wa.me/5521983251504?text=Do%20Cart%C3%A3o%20Digital%20-%20Delivery%2001%20-%20Solicita%C3%A7%C3%A3o%20de%20Pedido%3A%20Tem%20mais" target="_blank" class="dot" title="WhatsApp - Pedido 03"><i class="fab fa-whatsapp"></i></a>
+								<a href="https://wa.me/5521983251504?text=Do%20Cart%C3%A3o%20Digital%20-%20Delivery%2001%20-%20Solicita%C3%A7%C3%A3o%20de%20Pedido%3A%20Tem%20mais" target="_blank" class="iconslinkstextsfloat" title="WhatsApp - Pedido 03"><strong class="uppercasetext">Faça seu<br/>pedido!</strong></a>
+								<span class="clearall"></span>
+							</label>
+							<span class="clearall"></span>
+						</p>
+						<p class="topmargin0 clearall aligncenter">
+							<span class="verticalaligntop lineheight1-6"><strong class="uppercasetext">Curioso?</strong><br/>Clique no ícone abaixo e veja uma breve apresentação.</span>
+							<span class="clearall"></span>
+						</p>
+						<p class="topmargin0 clearall aligncenter">
+							<a href="https://www.youtube.com/watch?v=XrdF6rcH530" target="_blank" class="dot dothighlight" title="Youtube - Dica do Mau - Cartão Digital"><i class="fab fa-youtube"></i></a>
+							<a href="https://www.youtube.com/watch?v=XrdF6rcH530" target="_blank" class="iconslinkstextsfloat iconslinkstextshighlight" title="Youtube - Dica do Mau - Cartão Digital"><strong>Dica do Mau:<br/>Cartão Digital</strong></a>
+						</p>
+					</div>
+					<div id="ABA-03" class="tabcontent">
+						<p class="topmargin0">
+							<img alt="Delivery 01 - Sobre" src="imgs/mauricio-jun-sobre-picture-mobile.png" class="avatar avatar-85 photo verticalaligntop" height="85" width="85" title="Delivery 01 - Sobre"/>
+							<span class="verticalaligntop lineheight1-6"><strong class="uppercasetext">Exemplo de cartão virtual interativo</strong><br/>Este é apenas um modelo ilustrativo, com ícones clicáveis que permitem o fácil compratilhamento e contato instantâneo através de ligações, e-mails, mensagens de texto, acesso a sites e redes sociais.<br/>Dependendo do modelo, também é possível que os cartões digitais apresentem características de aplicativos, possam ser adicionados como ícones e executados das telas iniciais dos celulares, tablets e computadores. Outras possibilidades incluem o funcionamento offline (desconectado), atualizações automáticas, aparecer como resultado em sites de busca como o Google, consultar a quantidade de acessos, cliques, instalações e compartilhamentos.
+							<br/>Para saber mais, entre em contato ou clique no ícone abaixo.</span>
+						</p>
+						<p class="aligncenter topmargin0 portfolioarea">
+							<a href="https://mauriciojun-ti.blogspot.com" target="_blank" class="dot dothighlight" title="Site"><i class="fas fa-globe fahighlight"></i></a>
+							<a href="https://mauriciojun-ti.blogspot.com" target="_blank" class="iconslinkstextsfloat iconslinkstextshighlight" title="Site"><strong>Site:<br/>mauriciojun-ti.blogspot.com</strong></a>
+						</p>
+						<div class="clearall"></div>
+						<p class="aligncenter topmargin0">
+							<span class="verticalaligntop lineheight1-6 padding-bottom-1em display-block"><strong class="uppercasetext">LOCALIZAÇÃO ATUAL</strong></span>
+							<span class="clearall"></span>
+							<a href="https://goo.gl/maps/voyg1ksimXrmhGd36" target="_blank" class="dot dothighlight dotverticaltop" title="Google Maps"><i class="fas fa-map-marker-alt fahighlight"></i></a>
+							<a href="https://goo.gl/maps/voyg1ksimXrmhGd36" target="_blank" class="iconslinkstextsfloat iconslinkstextshighlight" title="Google Maps"><strong>R. Maestro José Botelho, 171<br/>Santa Rosa - Niterói - RJ</strong></a>
+						</p>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.820604951412!2d-43.1012925!3d-22.9058028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x998408ab897e3b%3A0x9dc61223646a474b!2sR.%20Maestro%20Jos%C3%A9%20Botelho%2C%20171%20-%20Santa%20Rosa%2C%20Niter%C3%B3i%20-%20RJ%2C%2024230-410!5e0!3m2!1spt-PT!2sbr!4v1593011543205!5m2!1spt-PT!2sbr" width="100%" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"></iframe>
+						<div class="clearall"></div>
+					</div>
+				</div>
+				
+				<div id="mainsocial" class="socialarea">
+					<a href="https://www.facebook.com/mauricio.jun.ti" target="_blank" class="dot" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.youtube.com/channel/UCBu0o1Qgq-hNUo7eL4vdLRg" target="_blank" class="dot" title="Youtube"><i class="fab fa-youtube"></i></a>
+					<a href="https://www.instagram.com/mauriciojun_ti" target="_blank" class="dot" title="Instagram"><i class="fab fa-instagram"></i></a>
+					<a href="https://twitter.com/MauricioTi" target="_blank" class="dot" title="Twitter"><i class="fab fa-twitter"></i></a>
+				</div>
+				<!-- 
+				<label id="fullscreenbuttons" class="fullscreenline">
+					<button onclick="openFullscreen();" class="firstbutt">Abrir tela cheia</button>
+					<button onclick="closeFullscreen();" class="endbutt">Sair tela cheia</button>
+				</label>
+				-->
+				<p class="aligncenter fontsize067em colorbfbfbf">MODELO MERAMENTE ILUSTRATIVO!</p>
+				
+			</div>
+			
+		</div>
+		
+		<div id="footer">
+			<footer>
+				<p>
+					Copyleft <i class="fab fa-creative-commons-sa"></i> 
+					<span id="showyear"></span> 
+					<script>
+						var d = new Date();
+						var n = d.getFullYear();
+						document.getElementById("showyear").innerHTML = n;
+					</script>
+					<a href="mailto:mauriciojun.ti@gmail.com"><strong>Mauricio Jun</strong></a>. Cópia autorizada!
+				</p>
+			</footer>
+		</div>
+		
+	</div>
+	
+	<!-- The Modal -->
+	<!-- 
+	<div id="myModal" class="modal add-to">
+	-->
+		<!-- Modal content -->
+		<!-- 
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2>Para facilitar, você pode...</h2>
+				<span class="close">&times;</span>
+			</div>
+			<div class="modal-body">
+				<label class="fullscreenline">
+					<button class="add-to-btn">Adicionar à tela inicial</button>
+				</label>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+		-->
+	<!-- </div> -->
+	
+	<script type="text/javascript">
+		function sendToAnalytics02(userChoice,eventName,eventCategory) {
+			gtag('event', eventName, {
+				'send_to': 'UA-171314245-2',
+				'event_category': eventCategory,
+				'event_label': userChoice
+			});
+			console.log('Send to anakytics 02 = ' + userChoice);
+		}
+		
+		function openTab(evt, tabName, tabTitle) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+			sendToAnalytics02(tabTitle,'Abas acessadas','Card Page - Offline');
+		}
+		document.getElementById("defaultOpen").click();
+		
+		var elmnttochange = document.getElementById("content");
+		var elmnt = document.getElementById("footer");
+		var elmntheight = 0;
+		elmntheight = elmnt.offsetHeight+"px";
+		elmnttochange.style.paddingBottom = elmntheight;
+		
+		window.addEventListener("click", function(e) {
+			if (e.target.tagName.toLowerCase()==='a') {
+				if (e.target.title) {
+					sendToAnalytics02(e.target.title,'Ícones acessados','Card Page - Offline');
+					console.log('Title = ' + e.target.title + ' | Tag Name = ' + e.target.tagName);
+				}
+			}
+			if (e.target.parentElement.tagName.toLowerCase()==='a') {
+				if (e.target.parentElement.title) {
+					sendToAnalytics02(e.target.parentElement.title,'Ícones acessados','Card Page - Offline');
+					console.log('Title = ' + e.target.parentElement.title + ' | Tag Name = ' + e.target.parentElement.tagName);
+				}
+			}
+		});
+		
+		var elem = document.documentElement;
+		function openFullscreen() {
+			if (elem.requestFullscreen) {
+				elem.requestFullscreen();
+			} else if (elem.mozRequestFullScreen) { /* Firefox */
+				elem.mozRequestFullScreen();
+			} else if (elem.webkitRequestFullscreen) { /* Chrome, Safari &amp; Opera */
+				elem.webkitRequestFullscreen();
+			} else if (elem.msRequestFullscreen) { /* IE/Edge */
+				elem.msRequestFullscreen();
+			}
+		}
+		function closeFullscreen() {
+			if (document.exitFullscreen) {
+				document.exitFullscreen();
+			} else if (document.mozCancelFullScreen) {
+				document.mozCancelFullScreen();
+			} else if (document.webkitExitFullscreen) {
+				document.webkitExitFullscreen();
+			} else if (document.msExitFullscreen) {
+				document.msExitFullscreen();
+			}
+		}
+		
+		var fullbuttons = document.getElementById("fullscreenbuttons");
+		
+		if (isPwa()) {
+			fullbuttons.style.display = "none";
+			sendToAnalytics02('App','Dispositivos de acesso','Card Page - Offline - Dispositivos');
+			console.log('window fullscreen - ' + isPwa());
+		} else {
+			fullbuttons.style.display = "block";
+			sendToAnalytics02('Web','Dispositivos de acesso','Card Page - Offline - Dispositivos');
+			console.log('window screen - Web');
+		}
+		function isPwa() { 
+			var displayModes = ["fullscreen", "standalone", "minimal-ui"];
+			return displayModes.some(
+				(displayMode) => window.matchMedia('(display-mode: ' + displayMode + ')').matches
+			);
+		}
+		
+		function getAddthisClicks() {
+			$( 'ul.at-expanding-share-button-services-list li' ).on( 'click', 'a', function() {
+				if ($( this ).find('title').text()) {
+					var sendicontitle = $( this ).find('title').text();
+					sendToAnalytics02(sendicontitle,'Opções de compartilhamentos feitos','Card Page - Offline - Addthis');
+					console.log('Share Addthis clicado = ' + sendicontitle);
+				}
+			});
+		}
+		var checkAddthisExist = setInterval(function() {
+			if ($( 'ul.at-expanding-share-button-services-list li' ).length) {
+				getAddthisClicks();
+				clearInterval(checkAddthisExist);
+			}
+		}, 100); // check every 100ms
+	</script>
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("slide-dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {
+				slideIndex = 1
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			setTimeout(showSlides, 3000); // Change image every 3 seconds
+		}
+	</script>
+   
+</body>
+</html>
