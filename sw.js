@@ -29,6 +29,7 @@ var urlsToCache = [
 	'/delivery-01/imgs/portfolio-01.png',
 	'/delivery-01/imgs/portfolio-02.png',
 	'/delivery-01/imgs/portfolio-03.png',
+	'/delivery-01/imgs/logo-bkg-03-mobile-transparente.png',
 	'/delivery-01/imgs/logo-mauricio-jun-cartao-digital-horiz-v01-01.png',
 	'/delivery-01/imgs/dcard-cartao-digital-background-line-v01-01.png',
 	'/delivery-01/imgs/dcard-cartao-digital-molde-cabecalho-v01-01.png',
